@@ -1,0 +1,118 @@
+/* Write CSS here */
+.bg-container {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/stopwatch-sm-bg.png');
+  background-size: cover;
+  height: 100vh;
+  font-family: 'Roboto';
+}
+
+@media screen and (min-width: 768px) {
+  .bg-container {
+    background-image: url('https://assets.ccbp.in/frontend/react-js/stopwatch-lg-bg.png');
+  }
+}
+
+.stopwatch-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 64px;
+}
+
+@media screen and (min-width: 992px) {
+  .stopwatch-container {
+    align-items: flex-start;
+    margin-left: 160px;
+  }
+}
+
+.stopwatch-heading {
+  font-size: 36px;
+  color: #333333;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 992px) {
+  .stopwatch-heading {
+    font-size: 64px;
+  }
+}
+
+.timer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  width: 310px;
+  border-radius: 12px;
+  padding: 32px;
+  box-shadow: 0px 4px 16px 0px rgba(24, 31, 70, 0.16);
+}
+
+.timer {
+  display: flex;
+  align-items: center;
+}
+
+.timer-image {
+  margin-right: 8px;
+}
+
+.heading {
+  font-size: 24px;
+  color: #333333;
+  font-weight: 500;
+}
+
+.stopwatch-timer {
+  font-size: 36px;
+  color: #333333;
+  font-weight: 500;
+  margin-top: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .stopwatch-timer {
+    font-size: 64px;
+  }
+}
+
+.timer-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.button {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-right: 20px;
+  padding-left: 20px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+@media screen and (min-width: 768px) {
+  .button {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+}
+
+.start-button {
+  background-color: #1db05f;
+  margin-right: 24px;
+}
+.stop-button {
+  background-color: #ef0d36;
+  margin-right: 24px;
+}
+.reset-button {
+  background-color: #eaa800;
+  margin-right: 24px;
+}
